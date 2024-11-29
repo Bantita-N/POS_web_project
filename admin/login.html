@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file here -->
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <section class="wrapper">
+                <div class="heading"> 
+                    <h1 class="text text-large">Sign In</h1>
+                    <p class="text text-normal">
+                        New user?
+                        <span>
+                            <a href="register.html" class="text text-links">Create an account</a>
+                        </span>
+                    </p>
+                </div>
+                <form name="signin" class="form" method="post" action="login_check.php">
+                    <div class="input-control">
+                        <label for="username" class="input-label" hidden>Username</label>
+                        <input type="text" name="username" id="username" class="form-control" required placeholder="Username">
+                    </div>
+                    <div class="input-control">
+                        <label for="password" class="input-label" hidden>Password</label>
+                        <input type="password" name="password" id="password" class="form-control" required placeholder="Password">
+                    </div>
+                    <div class="input-control">
+                        <a href="#" class="text text-links">Forgot Password</a>
+                        <input type="submit" name="submit" class="input-submit" value="Sign In" >
+                    </div>
+                </form>
+                <div class="striped">
+                    <span class="striped-line"></span>
+                    <span class="striped-text">Or</span>
+                    <span class="striped-line"></span>
+                </div>
+                <div class="method">
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Sign in with Google</span>
+                        </a>
+                    </div>
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Sign in with Facebook</span>
+                        </a> 
+                    </div>
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Sign in with Apple</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Link to Font Awesome -->
+</body>
+</html>
+
